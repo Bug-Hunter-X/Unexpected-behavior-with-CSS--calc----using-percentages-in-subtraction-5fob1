@@ -1,0 +1,12 @@
+The correct usage of `calc()` for subtracting a value from a percentage involves using a length unit (px, em, rem, etc.) instead of another percentage.  For example, instead of:
+
+```css
+width: calc(50% - 10%); /* Incorrect */
+```
+
+Use this:
+
+```css
+width: calc(50% - 10px); /* Correct */
+```
+This ensures consistent behavior and predictable results across all browsers.
